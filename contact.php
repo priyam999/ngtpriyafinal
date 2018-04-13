@@ -43,7 +43,7 @@ layout: default
                          
                               
 								<h2><b><u>Contact</u></b></h2>
-								<form action="contact.php" method="POST">
+								<form action="" method="POST">
 									<div class="row 50%">
 										<div class="6u 12u(mobilep)">
 											<input type="text" name="name" required="" id="name" placeholder="Name" />
