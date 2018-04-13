@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+        <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+		<title>NeverGiveUpThoughts</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="{{ site.baseurl }}/assets/css/ie/html5shiv.js"></script><![endif]-->
+		<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+		<script src="{{ site.baseurl }}/assets/js/jquery.dropotron.min.js"></script>
+		<script src="{{ site.baseurl }}/assets/js/skel.min.js"></script>
+		<script src="{{ site.baseurl }}/assets/js/skel-layers.min.js"></script>
+		<script src="{{ site.baseurl }}/assets/js/init.js"></script>
+
+		<noscript>
+			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/skel.css" />
+			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
+			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style-wide.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header">
+						
+				<!-- Logo -->
+					<h1 style="color:#217fe5;"><a href="{{ site.baseurl }}/index.html" id="logo">NeverGiveUp Thoughts</a></h1>
+				<!-- Nav -->
+					<nav id="nav">
+                    <img style="float:left;" class="logo" src="assets/images/ngts7.png" alt="logo">
+						<ul>
+							{% assign current = page.url | downcase | split: '/' %}
+							<li {% if current[1] == 'index.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/index.html"><h3>Home</h3></a></li>
+							
+							<!--<li {% if current[1] == 'blog' %}class="current"{% endif %}><a href="{{ site.baseurl }}/blog">Blog</a></li>-->
+							<li {% if current[1] == 'about.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/about.html"><h3>About</h3></a></li>
+							<li {% if current[1] == 'motivationalvideos.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/motivationalvideos.html"><h3>NGT Videos</h3></a></li>
+							<li {% if current[1] == 'motivationalblog.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/motivationalblog.html"><h3>NGT Blog</h3></a></li>
+							<li {% if current[1] == 'disclaimer.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/disclaimer.html"><h3>Disclaimer</h3></a></li>
+							<li {% if current[1] == 'privacypolicy.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/privacypolicy.html"><h3>Privacy policy</h3></a></li>
+							<li {% if current[1] == 'contact.html' %}class="current"{% endif %}><a href="https://form.jotform.me/80691151084454"><h3>Contact</h3></a></li>
+						</ul>
+					</nav>
+
+			</div>

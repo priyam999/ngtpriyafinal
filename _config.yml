@@ -1,0 +1,4 @@
+name: NeverGiveUp Thoughts
+description: Motivational blog
+paginate: 10
+baseurl: '/'
